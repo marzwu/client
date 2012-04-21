@@ -29,7 +29,7 @@ package net
 
 		private function writeln(str:String):void
 		{
-			str += "\n";
+//			str += "\n";
 			try
 			{
 				writeUTFBytes(str);
@@ -52,6 +52,7 @@ package net
 		{
 			var str:String = readUTFBytes(bytesAvailable);
 			response += str;
+			trace(response);
 		}
 
 		private function closeHandler(event:Event):void
