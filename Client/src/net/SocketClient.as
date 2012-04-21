@@ -64,7 +64,7 @@ package net
 		private function connectHandler(event:Event):void
 		{
 			trace("connectHandler: " + event);
-			sendRequest();
+//			sendRequest();
 		}
 
 		private function ioErrorHandler(event:IOErrorEvent):void
