@@ -6,7 +6,7 @@ package net
 
 	public class SocketClient extends Socket
 	{
-		private var response:String;
+		private var response:String = '';
 
 		public function SocketClient(host:String = null, port:uint = 0)
 		{
@@ -58,7 +58,7 @@ package net
 		private function closeHandler(event:Event):void
 		{
 			trace("closeHandler: " + event);
-			trace(response.toString());
+			trace(response);
 		}
 
 		private function connectHandler(event:Event):void
