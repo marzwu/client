@@ -16,8 +16,9 @@ package
 				setInterval(connect, 500, i);
 				function connect():void
 				{
+					trace(i);
 					var s:SocketClient = new SocketClient('127.0.0.1', 3456);
-					s.writeUTFBytes(i++.toString());
+					s.writeUTFBytes(i++.toString()+'\n');
 					s.flush();
 				}
 			}
